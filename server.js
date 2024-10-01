@@ -60,7 +60,7 @@ io.on('connection', (socket) => {
       rooms[roomId] = {
         players: [],
         board: Array(9).fill(""),
-        currentPlayer: "X",
+        currentPlayer: "O",
         gameActive: true,
       };
     }

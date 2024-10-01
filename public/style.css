@@ -19,7 +19,7 @@ body {
 .container {
     text-align: center;
     max-width: 600px;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     padding: 20px;
     background-color: #2c2f33; /* Màu nền sáng hơn cho container */
@@ -140,4 +140,83 @@ button:hover {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #eaeaea;
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #joinRoom input {
+        width: 100px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        min-width: 100px;
+    }
+
+    #gameBoard {
+        grid-template-columns: repeat(3, 90px);
+        grid-template-rows: repeat(3, 90px);
+        gap: 8px;
+    }
+
+    .cell {
+        width: 90px;
+        height: 90px;
+        font-size: 2rem;
+    }
+
+    #gameStatus {
+        font-size: 1.2rem;
+    }
+
+    #restartButton {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    #joinRoom input {
+        width: 80px;
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+        min-width: 90px;
+    }
+
+    #gameBoard {
+        grid-template-columns: repeat(3, 70px);
+        grid-template-rows: repeat(3, 70px);
+        gap: 6px;
+    }
+
+    .cell {
+        width: 70px;
+        height: 70px;
+        font-size: 1.5rem;
+    }
+
+    #gameStatus {
+        font-size: 1rem;
+    }
+
+    #restartButton {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
 }
